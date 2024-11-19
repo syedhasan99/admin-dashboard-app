@@ -1,0 +1,53 @@
+<div id="sidebar">
+  <div class="logo">
+    <h2>Veutify</h2>
+  </div>
+  <div class="sidebar-menu">
+    <ul>
+      <a
+        [ngClass]="activeMenu == 'overview' ? 'active' : ''"
+        routerLink="overview"
+        (click)="activeMenu = 'overview'"
+        ><li>
+          <mat-icon fontSet="material-icons-outlined">dashboard</mat-icon
+          >Dashboard Overview
+        </li></a
+      >
+      <a
+        routerLink="products"
+        [ngClass]="activeMenu == 'products' ? 'active' : ''"
+        (click)="activeMenu = 'products'"
+        ><li>
+          <mat-icon fontSet="material-icons-outlined">category</mat-icon
+          >Products
+        </li></a
+      >
+      <a
+        routerLink="orders"
+        [ngClass]="activeMenu == 'orders' ? 'active' : ''"
+        (click)="activeMenu = 'orders'"
+        ><li>
+          <mat-icon fontSet="material-icons-outlined">category</mat-icon>Orders
+        </li></a
+      >
+      <a
+        routerLink="customers"
+        [ngClass]="activeMenu == 'customers' ? 'active' : ''"
+        (click)="activeMenu = 'customers'"
+        ><li>
+          <mat-icon fontSet="material-icons-outlined">category</mat-icon
+          >Customers
+        </li></a
+      >
+      <a
+        routerLink="inventoryManagement"
+        [ngClass]="activeMenu == 'inventoryManagement' ? 'active' : ''"
+        (click)="activeMenu = 'inventoryManagement'"
+        ><li>
+          <mat-icon fontSet="material-icons-outlined">category</mat-icon
+          >Inventory Management
+        </li></a
+      >
+    </ul>
+  </div>
+</div>
