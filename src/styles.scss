@@ -9,5 +9,16 @@ body {
     width: 100%;
 }
 
-html, body { height: 100%; }
+:root {
+    --primary-color: #9087f9;
+
+    --sidebar-light: #efeef0;
+}
+
+html, body { height: 100%; font-size: 15px; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h5 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
